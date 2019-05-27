@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .d1{
+            float: left;
+            margin-left: 450px;
+            width: 200px;
+            height: 200px;
+            background: #ffffff;
+            border: 1px black solid;
+            line-height: 200px;
+            text-align: center;
+        }
+        .d2{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: white;
+            border: 1px black solid;
+            line-height: 200px;
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 630px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">abcdefg</div>
+    <div class="d2"></div>
+    <button type="button">点击</button>
+</body>
+<script>
+    /*
+    *
+    * 查询html元素的方法
+    * 1.querySelector 根据选择器获取匹配到的第一个元素
+    * 2.querySelectorAll() 根据选择器获取匹配到的所有元素
+    *
+    * 3.document.getElementsByClassName()  根据类名获取到元素
+    * 4.document.getElementsByTagName()    根据标签名来获取到元素
+    * 5.document.getElementById()         根据id获取元素
+    *
+    *
+    * 获取到元素之后，开始设置
+    * 1.设置内容
+    * innerHTML   获取元素的内容，包含标签如<H1>等
+    * innerText   获取元素的内容，不包含标签
+    *
+    *
+    * 2.操作属性
+    * a.如果说在HTML标签中本身带有的属性，那么通过JS就可以直接操作
+    * (class例外，因为class属于关键字，需要使用className来操作)
+    * 一种属性下包含其他属性，如style可以使用div.style.color来设置font-size需要转换成fontSize
+    *
+    * b.如果操作的属性不是html标签本身带有的属性
+    * 设置：div.setAttribute("name","value")
+    * 获取：div.getAttribute("name")
+    * 使用div.aa="bb"的方法时，不会显示在HTML上，但在内存中会存储，获取值的时候可以获取到
+    *
+    * 获取样式
+    * getComputedStyle(div,null).属性名   无论是行内，内嵌，外部样式表都能获取
+    *
+    * */
+
+    // var div1 = document.querySelector(".d1");
+    // var div2 = document.querySelector(".d2")
+    // var btn = document.querySelector("button")
+    // var temp = null;
+    // btn.onclick=function () {
+    //     temp = div1.innerHTML;
+    //     div1.innerHTML = div2.innerHTML;
+    //     div2.innerHTML = temp;
+    // }
+
+            // console.dir(div)       //将属性都罗列出来
+    /*
+    获取到对象后进行修改
+    * 1.内容      innerHTML获取或者赋值对象中的内容
+
+    * 2.样式
+
+    * 3.属性
+
+    * 4.事件      onclick鼠标单击事件   相当于一种函数
+        函数      函数名() (fn)()
+    */
+
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html> //文档说明
+1.树文档
+2.单标签
+3.双标签
+4.属性  对于标签功能的补充性说明
+5.head 对于文档的中心思想的说明
+<html lang="en">//HTML 超文本标记语言
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /**
+        选择器的优先级   哪种选择器指的更具体，它的优先级就更高
+        类和类之间是平级的
+
+        优先级：id   类   标签
+        复合选择器 同向比较要比相同的选择器优先级要高
+
+        伪类选择器
+        后代选择器：body div{ }
+         */
+
+        .one{
+            color: black;
+        }
+        .one:hover{
+            color: red;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="one">
+        我是div
+    </div>
+
+    <a href = "http://www.baidu.com">
+        百度
+    </a>
+
+    <img src="" alt="图片不存在" width="" height="" title="这是一张图片">
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ol>
+<table>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年级</th>
+        <th>班级</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>男</td>
+        <td>四</td>
+        <td>一班</td>
+    </tr>
+<!--
+    CSS层叠样式表
+    从功能上说：img a ul ol table
+
+    呈现形式：
+    矩形
+    排列方式：
+    块元素      不能和别的元素共享一行，能设置宽高
+    行内元素    可以和别的元素共享一行,不能设置宽高
+    行内块元素  就有行的特点，又有块的特点
+
+
+-->
+    <div>1</div>//块元素中没有意义的标签
+    <div>2</div>
+    <span>a</span>//行标签中没有意义的标签
+    <span>b</span>
+    <strong>粗体</strong>//修饰字体的一律是行标签，其余都是块标签
+    <em>倾斜</em>
+</table>
+
+    seo：搜索引擎优化
+
+    <em>倾斜</em> //具有搜索引擎优化的作用
+    <i>倾斜</i>
+    <strong>粗体</strong>//具有……
+    <b>粗体</b>
+    <del>删除线</del>//具有……
+    <a href="">链接</a>
+    <s>删除线</s>//
+    <span>典型的行内元素</span>
+    <img src="" alt="">典型的行内块元素
+</body>
+</html>
